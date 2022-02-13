@@ -1,0 +1,17 @@
+base
+linux
+linux-firmware
+base-devel
+xf86-video-intel
+grub
+vim
+networkmanager
+xorg-server
+xorg-xinit
+i3-gaps
+i3status
+dmenu
+openssh
+noto-fonts
+kitty
+cool-retro-term
