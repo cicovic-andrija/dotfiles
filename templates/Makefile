@@ -1,3 +1,4 @@
+#
 # Makefile template
 #
 
@@ -26,11 +27,8 @@ CXX := gcc
 CXXFLAGS = -c -m64 -std=c11 -pedantic -Wextra -Wall -Wshadow -I $(INC_DIR) -g -o $@
 DEPFLAGS = -MT $@ -MMD -MP -MF $(DEP_DIR)/$*.d
 CPPFLAGS = -D 'VERSION="v$(VERSION) (build: $(BUILD))"'
-LINKFLAGS = $$(ncursesw6-config --cflags --libs)
+LINKFLAGS = $$(ncursesw6-config --cflags --libs) # example config for ncurses lib
 BIN := binname
-
-install: $(BIN)
-	@cp $(BIN_DIR)/$(BIN) $(HOME)/bin/$(BIN)
 
 $(BIN): $(OBJ) | $(BIN_DIR)
 	$(CXX) -o $(BIN_DIR)/$(BIN) $(OBJ) $(LINKFLAGS)
@@ -53,7 +51,7 @@ tags:
 
 .PHONY: clean
 clean:
-	@rm -rf $(OBJ_DIR) $(DEP_DIR) $(BIN_DIR) *.i *.s $(HOME)/bin/$(BIN)
+	@rm -rf $(OBJ_DIR) $(DEP_DIR) $(BIN_DIR) *.i *.s
 
 DEP_FILES := $(SRC:%.c=$(DEP_DIR)/%.d)
 
