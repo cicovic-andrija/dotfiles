@@ -1,0 +1,6 @@
+configuration {
+    modi: "window,drun,combi";
+    font: "hack 16";
+    combi-modi: "window,drun";
+}
+@theme "solarized"

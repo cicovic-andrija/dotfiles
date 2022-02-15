@@ -68,7 +68,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+b exec firefox
 
 # Start Rofi.
-bindsym $mod+d exec "rofi -modi drun,run -show drun"
+bindsym $mod+d exec rofi -show combi
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
