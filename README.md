@@ -1,1 +1,3 @@
-Arch Linux configuration files.
+## arch.cfg
+
+Configuration files for Arch Linux.
