@@ -43,6 +43,8 @@ Here are listed all packages required for the setup to work properly.
 | i3-gaps                  | Tiling window manager.                                         |
 | i3blocks                 | Feed generator for i3bar (i3-gaps status line).                |
 | picom                    | Composite manager for X's Composite extension.                 |
+| i3lock                   | Screen locker for i3.                                          |
+| xss-lock                 | Screen lock trigger for X server.                              |
 | **Fonts**                |                                                                |
 | noto-fonts               | Google Noto TTF fonts.                                         |
 | ttf-hack                 | Monospaced font Hack.                                          |
