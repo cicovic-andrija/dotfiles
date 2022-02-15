@@ -6,8 +6,8 @@ xf86-video-intel
 grub
 networkmanager
 openssh
-net-tools
 acpi
+net-tools
 
 vim
 git
@@ -28,4 +28,5 @@ feh
 
 alsa-utils
 pulseaudio
-pulsemixer
+pavucontrol
+pasystray
