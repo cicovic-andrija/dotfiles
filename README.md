@@ -39,9 +39,10 @@ Here are listed all packages required for the setup to work properly.
 | xorg-server              | X.org X video server.                                          |
 | xorg-xinit               | X.org X initialization program.                                |
 | xorg-xset                | User preference utility for X server.                          |
-| xorg-xrandr              | Primitive command line interface to X's RandR extenstion.      |
+| xorg-xrandr              | Primitive command line interface to X's RandR extension.       |
 | i3-gaps                  | Tiling window manager.                                         |
 | i3blocks                 | Feed generator for i3bar (i3-gaps status line).                |
+| picom                    | Composite manager for X's Composite extension.                 |
 | **Fonts**                |                                                                |
 | noto-fonts               | Google Noto TTF fonts.                                         |
 | ttf-hack                 | Monospaced font Hack.                                          |

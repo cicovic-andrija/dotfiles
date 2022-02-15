@@ -18,7 +18,6 @@ command=xset -q | grep 'Caps Lock' | sed 's/[\t ][\t ]*/ /g' | cut -d' ' -f5 | s
 interval=once
 signal=10
 min_width=CAPS off
-color=#4c7899
 
 [battery]
 interval=30
@@ -27,7 +26,6 @@ LABEL=⚡
 [date]
 command=date +"%a, %d %b"
 interval=1
-color=#4c7899
 
 [time]
 command=date +"%H:%M:%S"
@@ -35,4 +33,3 @@ interval=1
 
 [inet]
 interval=15
-color=#4c7899
