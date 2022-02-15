@@ -5,11 +5,11 @@
 # Global properties.
 #
 # Blocks without command property will execute
-# a script with the same name as the block name.
+# a user script with the same name as the block name.
 #
 # Note: Scripts should have the execute permission.
 #
-command=~/.config/i3blocks/$BLOCK_NAME
+command=$USER_SCRIPTS/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
