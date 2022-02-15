@@ -20,6 +20,7 @@ ttf-font-awesome
 
 xorg-server
 xorg-xinit
+xorg-xset
 xorg-xrandr
 i3-gaps
 i3blocks

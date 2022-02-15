@@ -13,6 +13,12 @@ command=~/.config/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[caps-lock]
+command=xset -q | grep 'Caps Lock' | awk '{print $2, $3, $4}'
+interval=once
+signal=10
+color=#4c7899
+
 [battery]
 interval=30
 LABEL=⚡
@@ -20,8 +26,7 @@ LABEL=⚡
 [date]
 command=date +" %a, %d %b "
 interval=1
-color=#ffffff
-background=#4c7899
+color=#4c7899
 
 [time]
 command=date +" %H:%M:%S "
@@ -29,5 +34,4 @@ interval=1
 
 [inet]
 interval=15
-color=#ffffff
-background=#4c7899
+color=#4c7899
