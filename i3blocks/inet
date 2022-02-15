@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+  
+# This script is meant to use with i3blocks. It parses the output of
+# the "curl" command to determine whether the machine has Internet access.
+
+INET_IP_ADDRESS=`curl icanhazip.com`
+if [ $? -eq 0 ]
+then
+    INET_IFACE=`route | grep '^default' | grep -o '[^ ]*$'`
+    echo " ${INET_IP_ADDRESS} (${INET_IFACE}) " # full_text
+    echo " ${INET_IP_ADDRESS} " # short_text
+else
+    echo " no inet access " # full_text
+    echo " no inet " # short_text
+fi

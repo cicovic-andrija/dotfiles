@@ -1,0 +1,33 @@
+#
+# i3blocks config file
+#
+
+# Global properties.
+#
+# Blocks without command property will execute
+# a script with the same name as the block name.
+#
+# Note: Scripts should have the execute permission.
+#
+command=~/.config/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[battery]
+interval=30
+LABEL=⚡
+
+[date]
+command=date +" %a, %d %b "
+interval=1
+color=#ffffff
+background=#4c7899
+
+[time]
+command=date +" %H:%M:%S "
+interval=1
+
+[inet]
+interval=15
+color=#ffffff
+background=#4c7899
