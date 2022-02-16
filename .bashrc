@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias ll='ls -la'
+alias lswifi='nmcli device wifi list'
 
 PS1='[\u@\h \w]\$ '
 

@@ -38,13 +38,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
-Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Colorscheme settings.
 set background=dark
-colorscheme gruvbox
+colorscheme elflord
 
 " No error bells.
 set noerrorbells
@@ -75,9 +74,6 @@ set shiftwidth=4
 
 " Don't wrap lines.
 set nowrap
-
-" Highligh cursor line.
-set cursorline
 
 " Use incremental search.
 set incsearch
