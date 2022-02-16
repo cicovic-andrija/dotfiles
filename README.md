@@ -33,7 +33,7 @@ Here are listed all packages required for the setup to work properly.
 | openssh                  | Tools for SSH connectivity.                                    |
 | net-tools                | Configuration tools for networking on Linux.                   |
 | networkmanager           | Network connection management service.                         |
-| network-manager-applet   | System tray for managing network connections.                  |
+| network-manager-applet   | System tray and GUI for managing network connections.          |
 | **Video**                |                                                                |
 | xf86-video-intel         | X.org Intel video drivers.                                     |
 | xorg-server              | X.org X video server.                                          |
@@ -45,6 +45,7 @@ Here are listed all packages required for the setup to work properly.
 | picom                    | Composite manager for X's Composite extension.                 |
 | i3lock                   | Screen locker for i3.                                          |
 | xss-lock                 | Screen lock trigger for X server.                              |
+| arandr                   | Graphical frontend for xrandr.                                 |
 | **Fonts**                |                                                                |
 | noto-fonts               | Google Noto TTF fonts.                                         |
 | ttf-hack                 | Monospaced font Hack.                                          |

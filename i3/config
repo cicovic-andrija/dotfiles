@@ -28,16 +28,9 @@ set $ws10 "10"
 # Picom is a composite manager for X.
 exec --no-startup-id picom -b
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-
-# Run pasystray for audio input/output control.
-exec --no-startup-id pasystray
-
 # xss-lock grabs a login suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -u --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status finds out, if available).
@@ -46,13 +39,19 @@ bar {
     position top
     status_command i3blocks
     workspace_buttons yes
-    binding_mode_indicator no
     workspace_min_width 50
 
     colors {
-        background #00000060
-        statusline #ffffffff
-        separator #666666ff
+        background         #00000000
+        statusline         #ffffffff
+        separator          #666666ff
+
+        focused_workspace  #4c7899ff #285577ff #ffffffff
+        active_workspace   #333333ff #5f676aff #ffffffff
+        inactive_workspace #333333a0 #222222a0 #888888a0
+        urgent_workspace   #2f343aff #900000ff #ffffffff
+
+        binding_mode       #2f343aff #900000ff #ffffffff
     }
 }
 
@@ -69,6 +68,13 @@ bindsym $mod+b exec firefox
 
 # Start Rofi.
 bindsym $mod+d exec rofi -show combi
+
+# Lock the screen.
+bindsym $mod+Shift+s exec i3lock
+
+# Run/quit video/audio/network preference programs.
+bindsym $mod+Shift+o workspace $ws10; split v; exec arandr; exec pavucontrol; exec nm-connection-editor;
+bindsym $mod+Shift+p [workspace=$ws10] kill
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -96,6 +102,9 @@ bindsym $mod+u split h
 
 # Split in vertical orientation.
 bindsym $mod+v split v
+
+# Focus parent container.
+bindsym $mod+a focus parent
 
 # Enter fullscreen mode for the focused container.
 bindsym $mod+f fullscreen toggle
@@ -150,12 +159,6 @@ bindsym $mod+space focus mode_toggle
 
 # Use mouse+$mod to drag floating windows around.
 floating_modifier $mod
-
-# Lock the screen.
-bindsym $mod+Control+l exec i3lock -u
-
-# Focus parent container.
-bindsym $mod+a focus parent
 
 # Reload the i3 configuration file.
 bindsym $mod+Shift+c reload

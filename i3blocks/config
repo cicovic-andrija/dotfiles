@@ -13,6 +13,9 @@ command=$USER_SCRIPTS/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[inet]
+interval=15
+
 [caps-lock]
 command=xset -q | grep 'Caps Lock' | sed 's/[\t ][\t ]*/ /g' | cut -d' ' -f5 | sed 's/^/CAPS /g'
 interval=once
@@ -21,6 +24,7 @@ min_width=CAPS off
 
 [battery]
 interval=30
+BAT_NUMBER=1
 LABEL=⚡
 
 [date]
@@ -30,6 +34,3 @@ interval=1
 [time]
 command=date +"%H:%M:%S"
 interval=1
-
-[inet]
-interval=15
