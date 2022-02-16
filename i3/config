@@ -30,7 +30,7 @@ exec --no-startup-id picom -b
 
 # xss-lock grabs a login suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -u -i "$HOME/arch.cfg/wallpapers/river.jpg" --nofork
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status finds out, if available).
@@ -48,10 +48,10 @@ bar {
 
         focused_workspace  #4c7899ff #285577ff #ffffffff
         active_workspace   #333333ff #5f676aff #ffffffff
-        inactive_workspace #333333a0 #222222a0 #888888a0
+        inactive_workspace #33333300 #22222200 #ffffffff
         urgent_workspace   #2f343aff #900000ff #ffffffff
 
-        binding_mode       #2f343aff #900000ff #ffffffff
+        binding_mode       #2f343a00 #90000000 #ffffffff
     }
 }
 
@@ -70,10 +70,10 @@ bindsym $mod+b exec firefox
 bindsym $mod+d exec rofi -show combi
 
 # Lock the screen.
-bindsym $mod+Shift+s exec i3lock
+bindsym $mod+Shift+s exec loginctl lock-session
 
 # Run/quit video/audio/network preference programs.
-bindsym $mod+Shift+o workspace $ws10; split v; exec arandr; exec pavucontrol; exec nm-connection-editor
+bindsym $mod+Shift+o workspace $ws10; split h; exec arandr; exec pavucontrol
 bindsym $mod+Shift+p [workspace=$ws10] kill; workspace $ws1
 
 # Print screen area.
