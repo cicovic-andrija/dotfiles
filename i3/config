@@ -44,7 +44,7 @@ bar {
     colors {
         background         #00000000
         statusline         #ffffffff
-        separator          #666666ff
+        separator          #ffffffff
 
         focused_workspace  #4c7899ff #285577ff #ffffffff
         active_workspace   #333333ff #5f676aff #ffffffff
@@ -75,6 +75,9 @@ bindsym $mod+Shift+s exec i3lock
 # Run/quit video/audio/network preference programs.
 bindsym $mod+Shift+o workspace $ws10; split v; exec arandr; exec pavucontrol; exec nm-connection-editor;
 bindsym $mod+Shift+p [workspace=$ws10] kill
+
+# Print screen area.
+bindsym $mod+p exec --no-startup-id screenshot
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status

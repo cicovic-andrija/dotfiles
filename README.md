@@ -51,6 +51,7 @@ Here are listed all packages required for the setup to work properly.
 | ttf-hack                 | Monospaced font Hack.                                          |
 | ttf-jetbrains-mono       | Monospaced font by JetBrains.                                  |
 | ttf-font-awesome         | Iconic font designed for Bootstrap.                            |
+| maim                     | Screenshot CLI tool.                                           |
 | **Audio**                |                                                                |
 | alsa-utils               | Tools for interacting with ALSA.                               |
 | pulseaudio               | PulseAudio: a general purpose sound server                     |

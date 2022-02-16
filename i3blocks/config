@@ -34,3 +34,6 @@ interval=1
 [time]
 command=date +"%H:%M:%S"
 interval=1
+
+[screenshot]
+full_text=📷 
