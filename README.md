@@ -46,14 +46,13 @@ Here are listed all packages required for the setup to work properly.
 | i3lock                   | Screen locker for i3.                                          |
 | xss-lock                 | Screen lock trigger for X server.                              |
 | arandr                   | Graphical frontend for xrandr.                                 |
+| maim                     | Screenshot CLI tool.                                           |
 | **Fonts**                |                                                                |
 | noto-fonts               | Google Noto TTF fonts.                                         |
 | ttf-hack                 | Monospaced font Hack.                                          |
 | ttf-jetbrains-mono       | Monospaced font by JetBrains.                                  |
 | ttf-font-awesome         | Iconic font designed for Bootstrap.                            |
-| maim                     | Screenshot CLI tool.                                           |
 | **Audio**                |                                                                |
 | alsa-utils               | Tools for interacting with ALSA.                               |
-| pulseaudio               | PulseAudio: a general purpose sound server                     |
+| pulseaudio               | PulseAudio: a general purpose sound server.                    |
 | pavucontrol              | PulseAudio volume control utility.                             |
-| pasystray                | System tray for managing audio input/output with PulseAudio.   |
