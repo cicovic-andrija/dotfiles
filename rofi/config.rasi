@@ -3,4 +3,4 @@ configuration {
     font: "hack 16";
     combi-modi: "window,drun";
 }
-@theme "solarized"
+@theme "Adapta-Nokto"
