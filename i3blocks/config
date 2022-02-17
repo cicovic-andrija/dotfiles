@@ -13,6 +13,9 @@ command=$USER_SCRIPTS/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[inet]
+interval=60
+
 [volume]
 interval=once
 signal=11
@@ -24,12 +27,9 @@ interval=once
 signal=10
 min_width=CAPS off
 
-[inet]
-interval=15
-
 [battery]
 interval=30
-BAT_NUMBER=1
+BAT_NUMBER=0
 LABEL=⚡
 
 [date]
