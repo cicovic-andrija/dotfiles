@@ -8,11 +8,11 @@ INET_IP_ADDRESS=`curl icanhazip.com`
 if [ $? -eq 0 ]
 then
     IFS=
-    SPEEDTEST_RESULT=`speedtest-cli --bytes --simple`
+    SPEEDTEST_RESULT=`speedtest-cli --simple`
     PING=`echo $SPEEDTEST_RESULT | sed -n 1p | cut -d ':' -f2 | cut -d ' ' -f2`
     DOWN=`echo $SPEEDTEST_RESULT | sed -n 2p | cut -d ':' -f2 | cut -d ' ' -f2`
     UP=`echo $SPEEDTEST_RESULT | sed -n 3p | cut -d ':' -f2 | cut -d ' ' -f2`
-    echo "→ ${PING}ms ↓ ${DOWN}MB/s ↑ ${UP}MB/s ${INET_IP_ADDRESS}" # full_text
+    echo "${PING}ms→ ${DOWN}Mbps↓ ${UP}Mbps↑ ${INET_IP_ADDRESS}" # full_text
     echo "${INET_IP_ADDRESS}" # short_text
 else
     echo "no inet access" # full_text
