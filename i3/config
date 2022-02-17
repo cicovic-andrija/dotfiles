@@ -70,14 +70,10 @@ bindsym $mod+Return exec kitty
 bindsym $mod+b exec firefox
 
 # Start Rofi.
-bindsym $mod+d exec rofi -show combi
+bindsym $mod+d exec rofi -show drun
 
 # Lock the screen.
 bindsym $mod+Shift+s exec loginctl lock-session
-
-# Run/quit video/audio/network preference programs.
-bindsym $mod+Shift+o workspace $ws10; split h; exec arandr; exec pavucontrol
-bindsym $mod+Shift+p [workspace=$ws10] kill; workspace $ws1
 
 # Print screen area.
 bindsym $mod+p exec --no-startup-id screenshot
