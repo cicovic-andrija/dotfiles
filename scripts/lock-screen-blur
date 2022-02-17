@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+# This script takes a screenshot using the "maim" tool,
+# and writes it to a temporary file. Then, it locks the screen
+# by calling "i3lock".
+
+SCRSHTFILE="/tmp/screenshot.png"
+TMPFILENAME=`openssl rand -hex 8`
+maim $SCRSHTFILE
+convert $SCRSHTFILE -filter Gaussian -blur 0x6 "/tmp/${TMPFILENAME}"
+rm $SCRSHTFILE
+i3lock -u -i "/tmp/${TMPFILENAME}"
+rm "/tmp/${TMPFILENAME}"

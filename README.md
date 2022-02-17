@@ -29,6 +29,7 @@ Here are listed all packages required for the setup to work properly.
 | git                      | Version control system.                                        |
 | kitty                    | Terminal emulator.                                             |
 | pandoc                   | Program for conversion between markdown formats.               |
+| imagemagick              | Image viewing and manipulation program.                        |
 | **Networking**           |                                                                |
 | openssh                  | Tools for SSH connectivity.                                    |
 | net-tools                | Configuration tools for networking on Linux.                   |
