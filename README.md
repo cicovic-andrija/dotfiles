@@ -47,6 +47,7 @@ Here are listed all packages required for the setup to work properly.
 | i3lock                   | Screen locker for i3.                                          |
 | xss-lock                 | Screen lock trigger for X server.                              |
 | arandr                   | Graphical frontend for xrandr.                                 |
+| autorandr                | Tool to auto-detect connected displays and load xrandr setup.  |
 | maim                     | Screenshot CLI tool.                                           |
 | **Fonts**                |                                                                |
 | noto-fonts               | Google Noto TTF fonts.                                         |
