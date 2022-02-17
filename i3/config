@@ -4,8 +4,8 @@
 set $mod Mod4
 
 # Gap and window settings.
-gaps inner 5
-gaps outer 5
+gaps inner 8
+gaps outer 10
 default_border pixel 1
 default_floating_border pixel 1
 

@@ -30,6 +30,7 @@ Here are listed all packages required for the setup to work properly.
 | kitty                    | Terminal emulator.                                             |
 | pandoc                   | Program for conversion between markdown formats.               |
 | imagemagick              | Image viewing and manipulation program.                        |
+| dunst                    | Notification daemon.                                           |
 | **Networking**           |                                                                |
 | openssh                  | Tools for SSH connectivity.                                    |
 | net-tools                | Configuration tools for networking on Linux.                   |
