@@ -51,9 +51,10 @@ Here are listed all packages required for the setup to work properly.
 | autorandr                | Tool to auto-detect connected displays and load xrandr setup.  |
 | maim                     | Screenshot CLI tool.                                           |
 | **Fonts**                |                                                                |
-| noto-fonts               | Google Noto TTF fonts.                                         |
 | ttf-hack                 | Monospaced font Hack.                                          |
 | ttf-jetbrains-mono       | Monospaced font by JetBrains.                                  |
+| noto-fonts               | Google Noto TTF fonts.                                         |
+| awesome-terminal-fonts   | Terminal fonts for various powerlines.                         |
 | arc-icon-theme           | Arc icons.                                                     |
 | **Audio**                |                                                                |
 | alsa-utils               | Tools for interacting with ALSA.                               |

@@ -13,6 +13,13 @@ command=$USER_SCRIPTS/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+# TODO
+[mute-indicator]
+full_text=
+
+[screenshot]
+full_text=
+
 [inet]
 interval=60
 
@@ -37,8 +44,5 @@ command=date +"%a, %d %b"
 interval=1
 
 [time]
-command=date +"%H:%M:%S"
+command=date +"%H:%M:%S  "
 interval=1
-
-[screenshot]
-full_text=📷 
