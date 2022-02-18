@@ -54,6 +54,7 @@ Here are listed all packages required for the setup to work properly.
 | noto-fonts               | Google Noto TTF fonts.                                         |
 | ttf-hack                 | Monospaced font Hack.                                          |
 | ttf-jetbrains-mono       | Monospaced font by JetBrains.                                  |
+| arc-icon-theme           | Arc icons.                                                     |
 | **Audio**                |                                                                |
 | alsa-utils               | Tools for interacting with ALSA.                               |
 | pulseaudio               | PulseAudio: a general purpose sound server.                    |

@@ -32,6 +32,12 @@ exec --no-startup-id picom -b
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- lock-screen-blur
 
+# Try to detect display configuration.
+exec --no-startup-id autorandr --change
+
+# Run notification daemon.
+exec_always --no-startup-id dunst
+
 # Set desktop wallpaper.
 exec_always --no-startup-id feh --randomize --bg-scale --no-fehbg "$HOME/.wallpapers"
 
@@ -79,10 +85,9 @@ bindsym $mod+Shift+s exec loginctl lock-session
 bindsym $mod+p exec --no-startup-id screenshot
 
 # Volume control.
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -M -q -D default sset Master 5%+ && pkill -SIGRTMIN+11 i3blocks
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -M -q -D default sset Master 5%- && pkill -SIGRTMIN+11 i3blocks
-# TODO: For some reason, mute/unmute needs to be done through PulseAudio.
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -SIGRTMIN+11 i3blocks
+bindsym XF86AudioRaiseVolume exec --no-startup-id volume-dunst +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id volume-dunst -5%
+bindsym XF86AudioMute exec --no-startup-id volume-dunst toggle
 
 # Mic. mute.
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle

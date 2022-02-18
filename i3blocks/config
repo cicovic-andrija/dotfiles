@@ -16,11 +16,6 @@ markup=none
 [inet]
 interval=60
 
-[volume]
-interval=once
-signal=11
-min_width=♪ ●●●●●●●●●●
-
 [caps-lock]
 command=xset -q | grep 'Caps Lock' | sed 's/[\t ][\t ]*/ /g' | cut -d' ' -f5 | sed 's/^/CAPS /g'
 interval=once
