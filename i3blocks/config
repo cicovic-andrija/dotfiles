@@ -13,9 +13,15 @@ command=$USER_SCRIPTS/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-# TODO
 [mute-indicator]
-full_text=
+interval=once
+signal=11
+min_width=
+
+[mic-indicator]
+interval=once
+signal=12
+min_width=
 
 [screenshot]
 full_text=

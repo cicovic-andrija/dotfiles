@@ -87,10 +87,10 @@ bindsym $mod+p exec --no-startup-id screenshot
 # Volume control.
 bindsym XF86AudioRaiseVolume exec --no-startup-id volume-dunst +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id volume-dunst -5%
-bindsym XF86AudioMute exec --no-startup-id volume-dunst toggle
+bindsym XF86AudioMute exec --no-startup-id volume-dunst toggle && pkill -SIGRTMIN+11 i3blocks
 
 # Mic. mute.
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+12 i3blocks
 
 # Refresh i3blocks caps lock status.
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
