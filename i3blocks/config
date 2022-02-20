@@ -13,19 +13,6 @@ command=$USER_SCRIPTS/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-[mute-indicator]
-interval=once
-signal=11
-min_width=
-
-[mic-indicator]
-interval=once
-signal=12
-min_width=
-
-[screenshot]
-full_text=
-
 [inet]
 interval=60
 
@@ -44,6 +31,19 @@ LABEL=⚡
 interval=30
 BAT_NUMBER=1
 LABEL=⚡
+
+[mute-indicator]
+interval=once
+signal=11
+min_width=
+
+[mic-indicator]
+interval=once
+signal=12
+min_width=
+
+[screenshot]
+full_text=
 
 [date]
 command=date +"%a, %d %b"
