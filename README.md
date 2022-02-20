@@ -36,6 +36,7 @@ Here are listed all packages required for the setup to work properly.
 | net-tools                | Configuration tools for networking on Linux.                   |
 | networkmanager           | Network connection management service.                         |
 | network-manager-applet   | System tray and GUI for managing network connections.          |
+| speedtest-cli            | CLI for testing Internet bandwidth.                            |
 | **Video**                |                                                                |
 | xf86-video-intel         | X.org Intel video drivers.                                     |
 | xorg-server              | X.org X video server.                                          |
