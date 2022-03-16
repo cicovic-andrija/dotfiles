@@ -35,6 +35,7 @@ Here are listed all packages required for the setup to work properly.
 | networkmanager           | Network connection management service.                         |
 | network-manager-applet   | System tray and GUI for managing network connections.          |
 | speedtest-cli            | CLI for testing Internet bandwidth.                            |
+| iptables                 | Linux kernel packet control tool.                              |
 | **Video**                |                                                                |
 | xf86-video-intel         | X.org Intel video drivers.                                     |
 | xorg-server              | X.org X video server.                                          |
