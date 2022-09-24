@@ -42,6 +42,9 @@ set backspace=indent,eol,start
 set showbreak=↪\ 
 set listchars=tab:→\ ,trail:•,space:·,eol:↲
 set updatetime=100
+set nobackup
+set nowritebackup
+set signcolumn=yes
 
 let mapleader=" "
 nnoremap <CR> o<Esc>k
@@ -90,6 +93,11 @@ function! TrimTrailingWhitespace()
     execute '%s/\s\+$//e'
 endfunction
 
+function! CheckBackspace() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
 let g:lightline = {
 \ 'active': {
 \   'left': [['mode', 'paste'], ['readonly', 'filename']],
@@ -105,3 +113,19 @@ let g:lightline = {
 \ 'subseparator': {'left': "\uE0B1", 'right': "\uE0B3"},
 \ }
 let g:lightline.colorscheme = 'Tomorrow'
+
+let g:rustfmt_autosave=1
+let g:rustfmt_emit_files=1
+let g:rustfmt_fail_silently=0
+
+inoremap <silent><expr> <Tab>
+    \ coc#pum#visible() ? coc#pum#next(1) :
+    \ CheckBackspace() ? "\<TAB>" :
+    \ coc#refresh()
+
+inoremap <expr><S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() :
+    \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+inoremap <silent><expr> <C-Space> coc#refresh()
