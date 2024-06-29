@@ -1,0 +1,9 @@
+{
+    "editor.inlayHints.enabled": "off",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "window.menuBarVisibility": "toggle",
+}
