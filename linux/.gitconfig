@@ -1,3 +1,9 @@
 [user]
 	email = cicovic.andrija@gmail.com
 	name = cicovic-andrija
+[diff]
+	tool = vimdiff
+[difftool "vimdiff"]
+	path = nvim
+[difftool]
+	prompt = false
