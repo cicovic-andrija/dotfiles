@@ -3,20 +3,9 @@
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.renderWhitespace": "all",
-    "editor.semanticTokenColorCustomizations": {
-        "enabled": true,
-        "rules": {
-            "*": {
-                "underline": false,
-            }
-        }
-    },
-
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "files.exclude": {
-        "**/target": true
-    },
-
-    "workbench.startupEditor": "none",
+    "window.menuBarVisibility": "toggle",
+    "diffEditor.renderSideBySide": false,
+    "extensions.ignoreRecommendations": true
 }
