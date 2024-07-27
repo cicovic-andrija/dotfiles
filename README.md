@@ -1,3 +1,1 @@
-# Dotfiles
-
-Configuration files for Linux and Windows.
+Configuration files for Linux.

@@ -1,4 +1,0 @@
-#!/usr/bin/bash
-
-mkdir -p "${HOME}/screenshots"
-maim --select "${HOME}/screenshots/scr_$(date +%Y-%m-%d_%H-%M-%S).png"
