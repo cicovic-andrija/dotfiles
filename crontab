@@ -7,6 +7,6 @@
 # │ │ │ │ │
 # │ │ │ │ │
 # * * * * *  command_to_execute
-0 8 * * * /usr/local/bin/signal-cli -a +38162667097 send -m "$(fortune | cowsay)" +381691962811
-0 8 * * * /usr/local/bin/signal-cli -a +38162667097 send -m "$(fortune | cowsay)" +38162667097
+0 8 * * * /usr/local/bin/signal-cli -a $ACCOUNT send -m "$(fortune | cowsay)" $RECV
+0 8 * * * /usr/local/bin/signal-cli -a $ACCOUNT send -m "$(fortune | cowsay)" $RECV
 * * * * * /home/andrija/config/backup-scripts/report-backup-sync-warning
