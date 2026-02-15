@@ -1,3 +1,1 @@
-# Dotfiles
-
-Configuration files for Linux.
+Configuration files for Linux/Pop!_OS.
